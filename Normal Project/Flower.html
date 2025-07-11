@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouquet</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4098/4098384.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url('b6.jpg');
+      background-size: cover;
+
+    }
+
+    h1{
+      animation: shadow 1.5s ease-in-out infinite; 
+      transition: all 1.3s linear; 
+    }
+    @keyframes shadow{
+    0%{
+        color:black;
+        text-shadow: 0px 3px 10px rgba(255, 255, 255, 0.703);
+    }
+    70%{
+      color:rgba(138, 126, 126, 0.886);
+        text-shadow: -6px 3px 15px rgb(254, 247, 162);
+    }
+    90%{
+      color:rgba(255, 255, 255, 0.5);
+        text-shadow: 6px 3px 15px rgb(255, 255, 255);
+    }
+
+}
+
+    table {
+      width:450px;
+      border-spacing: 40px;;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    table img {
+      width: 150px;
+      height: 130px;
+      border-radius: 20px;
+    }
+
+    td {
+      background-color: rgba(231, 107, 134, 0.4);
+      border: 3px dotted white;
+      border-radius: 30px;
+    }
+
+    button {
+      width: 75px;
+      height: 35px;
+      background-color: rgba(255, 255, 255, 0.121);
+      border: 0px;
+      border-radius: 30px;
+
+      animation: glow 1s ease infinite;
+    }
+
+    @keyframes glow{
+      0% {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #73bc78, 0 0 50px #ffffff, 0 0 60px #dfd4d9, 0 0 70px #ffefa5;
+    }
+
+    90% {
+        box-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #d5ed90, 0 0 50px #edcfa0, 0 0 60px #e5ca7f, 0 0 70px #aab77b, 0 0 80px #ffffff;
+    }
+    }
+
+    button:hover {
+      background-color: #fffa94b0;
+    }
+
+    .flower {
+      text-decoration: none;
+      font-size: 15px;
+      text-shadow: 1px 0px 1px rgb(236, 135, 152);
+      color:white;
+      font-weight: bold;
+      transition: all 1.5s ease ;
+    }
+
+    .flower:hover {
+      color: rgb(240, 132, 170);
+      text-shadow: 1px 1px 3px rgb(255, 255, 255);
+    }
+
+    .float-img {
+      width: 130px;
+      animation: floatUpDown 2.5s ease-in-out infinite;
+    }
+
+    @keyframes floatUpDown {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width:768px) {
+      body {
+        background-size: cover;
+        background-position: center center;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      table {
+        width: 90%;
+        margin: 20px auto;
+
+      }
+
+      table td {
+        width: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      table img {
+        width: 100%;
+        height: auto;
+      }
+
+      .flower {
+        display: block;
+        text-align: center;
+        margin-top: 3px;
+        font-size: 13px;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 align="center">Bouquet Categories</h1>
+  <table width="700px" height="500px">
+
+    <tr>
+      <td>
+        <img src=R1.jpg class="float-img">
+        <button> <a href="Rose.html" class="flower">Rose </a></button>
+      </td>
+
+      <td>
+        <img src=tt.jpg class="float-img">
+        <button> <a href="Tulip.html" class="flower">Tulip </a></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td><img src=O1.jpg class="float-img ">
+        <button> <a href="Orchid.html" class="flower">Orchid </a></button>
+      </td>
+      <td>
+        <img src=da.jpg class="float-img">
+        <button><a href="Daisy.html" class="flower">Daisy</a></button>
+      </td>
+    </tr>
+  </table>
+
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<ta>, initial-scale=1.0">
+    <title>Daisy</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/14770/14770867.png">
+</head>
+<style>
+    
+    body{
+     background-image: url('rsisy.jpg'); 
+       background-size: cover;
+    }
+    table{
+      width:800px;
+      border-spacing: 40px;
+      text-align: center;
+    }
+    table  img{
+        width:140px;
+        height:140px;
+       border-radius: 20px;
+       padding-top: 5px;
+    }
+    td{
+      background-color: aliceblue;
+      border-radius: 20px;;
+    }
+    figcaption{
+        margin-bottom:8px;
+        color:white;
+        text-shadow: 2px 1px 3px rgb(43, 82, 136);
+    }
+    button{
+      margin-bottom:5px;
+      font-size:15px;
+      padding:8px;
+      border: 0px;
+      border-radius: 8px;
+      background-color: rgba(120, 192, 255, 0.447);
+      transition: all 1s linear;
+    }    
+    button .Par{
+      text-decoration: none;
+      font-weight:bold;
+      color:pink;
+    }
+    button:hover{
+      background-color: rgb(250, 246, 202);
+      padding:9px;
+    }
+    a:hover{
+      text-shadow: 0px 2px 3px white;
+      font-size: 1rem;
+      font-style:italic;
+    }
+
+.calm-img {
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+#btn{
+  width:60px;
+  background-color: rgba(255, 255, 255, 0.587);
+  transition:all .5s ease-in-out;
+}
+
+#btn a{
+  text-decoration:none;
+  color:rgb(4, 2, 161);
+  font-weight: bold;
+  transition:all .5s ease-in-out;
+}
+#btn:hover{
+  width:70px;
+  background-color: rgb(122, 161, 224);
+
+}
+#btn a:hover{
+  font-size: 1rem;
+  color:white;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  table tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  table td {
+    width: 30%;     /* Almost 3 images per row */
+    margin: 1%;     /* Add space between columns */
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  table img {
+    width: 70%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  figcaption {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 5px 10px;
+
+    display: block;
+    margin: 5px auto;
+    
+  }
+}
+</style>
+<body>
+     <table  width="1200px" height="500px" align="center">
+           <tr></tr>
+            <td><img src=da.jpg class="calm-img">
+            <figcaption>Daisy Bouquet<br>Price-10000ks</figcaption>
+            <button  type="button"><a href="order.html" class="Par" target="_blank" >Purchase</a></button>
+                  
+            </td>
+             
+            <td><img src=da6.jpg class="calm-img" > <figcaption>Daisy  Bouquet<br>Price-10000ks</figcaption>
+            <button  type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button></td>
+            <td><img src=da2.jpg  class="calm-img"> <figcaption>Daisy  Bouquet<br>Price-10000ks</figcaption>
+               <button  type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button></td>
+             
+           
+           </tr>
+           <tr>
+            <td><img src=da3.jpg class="calm-img"> <figcaption>Daisy Bouquet<br>Price-10000ks</figcaption>
+               <button  type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button></td>
+             
+            <td><img src=da4.jpg class="calm-img" > <figcaption>Daisy  Bouquet<br>Price-10000ks</figcaption>
+               <button  type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button></td>
+            <td><img src=da5.jpg class="calm-img" > <figcaption>Daisy  Bouquet<br>Price-10000ks</figcaption>
+               <button  type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button></td>
+             
+           </tr>
+     </table> 
+            <button  type="button" id="btn"><a href="flower.html">Back</a></button>
+</body>
+</html>

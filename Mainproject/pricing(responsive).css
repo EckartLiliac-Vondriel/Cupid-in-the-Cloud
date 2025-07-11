@@ -1,0 +1,216 @@
+@media (max-width: 450px) {
+  header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 20px 20px;
+  }
+  header nav {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .logo {
+    padding-left: 1rem;
+    margin: 0;
+    width: auto;
+    gap: 0.5rem;
+  }
+  header nav .logo a {
+    font-size: 1.2rem;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .logo i {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    height: auto;
+    grid-column: 1 / span 2;
+    grid-row: 2/3;
+    box-shadow: 0px 3px 7px 3px rgba(190, 166, 166, 0.5);
+    border-radius: 0 0 15px 15px;
+    justify-content: space-around;
+    display: flex;
+    padding: 0.4rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    white-space: nowrap;
+    padding: 0.7rem 0rem;
+    border-radius: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  .navbar .login {
+    padding-right: 2rem;
+  }
+
+  .login a:nth-child(2) {
+    display: block;
+    background-color: #f43f5e;
+    padding: 0.4rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+    transition: all 100ms;
+  }
+  .login a:nth-child(2) {
+    color: black;
+    transform: translate(1px, -1px);
+    box-shadow: -1px 1px 7px 0.2px rgba(58, 58, 58, 0.3);
+  }
+  .login a:nth-child(1),
+  .login a:nth-child(3) {
+    display: none;
+  }
+  .section1 .container1 h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .section1 .container1 p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .container2 > h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .container2 .items .card {
+    justify-content: center;
+    align-items: center;
+  }
+  .container2 .items .card > p {
+    text-align: center;
+  }
+  .container2 .items .card1 .p h2 {
+    font-size: 2.4rem;
+  }
+  .container2 .items .card a {
+    padding: 0.5rem 2rem;
+  }
+  details > summary:first-of-type {
+    width: 75%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .section2 h2,
+  .section2 details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .section2 h2 {
+    font-size: 1.2rem;
+  }
+  .section2 details p {
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+  }
+  .section2 hr {
+    width: 80%;
+  }
+  footer {
+    /* padding: 2rem 1rem; */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  footer .container {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+  footer .social {
+    width: 100%;
+    margin: 0;
+    padding-top: 1rem;
+  }
+  footer .container .social .div1 i {
+    font-size: 1.6rem;
+  }
+  footer .container .social .div1 h2 {
+    font-size: 1.6rem;
+  }
+  footer .container .social p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: start;
+    margin: 0;
+  }
+  footer .container .social .i-container {
+    width: auto;
+    color: #ff274b;
+    margin: 0;
+    justify-content: start;
+  }
+  footer .container .social .i-container i {
+    font-size: 1.2rem;
+    padding: 1px 5px;
+    background-color: #fcd9d9;
+    width: auto;
+    height: auto;
+    margin: 2rem 0;
+  }
+  footer .support {
+    margin: 0;
+    flex: none;
+    margin-bottom: 1.3rem;
+  }
+  footer .container .support h2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  footer .container .support p {
+    font-size: 1rem;
+  }
+  footer .container .contact {
+    width: 12rem;
+    max-width: 12rem;
+    height: auto;
+    padding: 0 1rem;
+    margin: 0;
+    animation-range: 10% 25%;
+  }
+  footer .container .contact .main {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  footer .container .contact > i {
+    font-size: 1rem;
+  }
+  footer .container .contact h3 {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  footer .container .contact p {
+    font-size: 1rem;
+  }
+  footer .container .contact div {
+    width: 100%;
+  }
+  footer .container .contact div a {
+    font-size: 1rem;
+    width: auto;
+  }
+  footer .container .contact div i {
+    font-size: 1rem;
+  }
+}

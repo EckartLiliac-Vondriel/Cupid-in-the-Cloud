@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('./blue_tulip.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    position: relative;
+    cursor: default;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.363);
+    border: 1px solid white;
+    box-shadow: 0px 2px 3px rgb(190, 228, 132);
+    top: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+}
+
+nav ul {
+    width: 700px;
+    height: inherit;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li,
+nav ul li a {
+    padding: 5px 10px;
+    transition: all .5s ease-in;
+}
+
+nav ul li:hover {
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(159, 193, 255);
+    border: 1px solid rgb(160, 215, 143);
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #f4ee9b;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbtn {
+    width: 66px;
+    height: 30px;
+    color: white;
+    border: 1px solid rgb(160, 215, 143);
+    border-radius: 5px;
+    background-color: rgba(95, 158, 160, 0.632);
+
+    transition: all .5s ease;
+}
+
+#navbtn:hover {
+    width: 68px;
+    height: 33px;
+    color: black;
+    background-color: white;
+}
+
+/* Start Content One */
+.content_one {
+    margin-top: 90px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(145deg, rgb(211, 255, 122), white, rgb(95, 160, 106));
+    border-radius: 15px;
+}
+
+.content_one div {
+    /* width:100%; */
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_txt {
+    width: 90%;
+    text-align: center;
+
+    position: absolute;
+    left: 60px;
+}
+
+.content_one h1 {
+    font-size: 3rem;
+    text-shadow: 0px 3px 5px whitesmoke;
+}
+
+.content_one h2 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 3px 5px cadetblue;
+    margin-bottom: 10px;
+}
+
+.content_one p {
+    font-size: 1rem;
+    text-shadow: 0px 1px 0px white;
+}
+
+.content_img {
+    width: 100%;
+    height: 100%;
+    background-image: url('./hope.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#butt {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 0px 2px 3px rgb(255, 255, 255);
+    background: linear-gradient(rgb(95, 160, 135, 0.311), white);
+    border: 1px solid rgb(152, 197, 98);
+    border-radius: 5px;
+
+    animation: glow 1.5s ease infinite;
+    transition: all .5s ease-in;
+}
+
+#butt:hover {
+    width: 105px;
+    height: 35px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #98ca6f, 0 0 40px #71a65e, 0 0 50px #b7da88, 0 0 60px #d9e1d3, 0 0 70px #ffffff;
+    }
+
+    90% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #a8dea7, 0 0 40px #a8d96b, 0 0 50px #a8dd79, 0 0 60px #90b95e, 0 0 70px #ffffff, 0 0 80px #ffffff;
+    }
+}
+
+
+/* Content Two */
+.content_two {
+    width: 100%;
+    height: 100vh;
+    margin-top: 25px;
+    background: linear-gradient(145deg, rgb(211, 255, 122), white, rgb(95, 160, 106));
+    background-image: url('./ruby.jpg');
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.content_two h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 1px 0px rgb(13, 57, 11);
+    margin-top: 15px;
+}
+
+.content_two h2 {
+    font-size: 2rem;
+    color: rgb(91, 166, 129);
+    text-shadow: 0px 1px 0px rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.content_two p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(250, 235, 140);
+    text-shadow: 0px 1px 0px rgb(255, 0, 0);
+}
+
+.content_img2 {
+    width: 100%;
+    height: 100%;
+    /* background-image: url('./ruby.jpg'); */
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#txt2 ul,
+#txt3 ul {
+    list-style: none;
+    width: 130px;
+    border: 4px solid white;
+    border-radius: 15px;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    transform: translate(810px, 130px);
+    animation: box 1s linear infinite forwards;
+    transition: all .5s ease-in;
+}
+
+@keyframes box {
+    0% {
+        border-color: rgb(252, 244, 149);
+    }
+
+    40% {
+        border-color: white;
+    }
+
+    90% {
+        border-color: rgb(120, 212, 165);
+    }
+
+    100% {
+        border-color: rgb(255, 255, 255);
+    }
+}
+
+#txt2 ul:hover,
+#txt3 ul:hover {
+    font-size: 3rem;
+    padding: 10px;
+    background-color: rgba(253, 250, 154, 0.4);
+}
+
+
+#txt2 ul li,
+#txt3 ul li {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+
+    animation: ani 1s linear infinite;
+}
+
+@keyframes ani {
+    0% {
+        color: pink;
+    }
+
+    90% {
+        color: rgb(118, 201, 240);
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+#txt2 ul li:nth-of-type(1),
+#txt3 ul li:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+#txt2 ul li:nth-of-type(2),
+#txt3 ul li:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+#txt2 ul li:nth-of-type(3),
+#txt3 ul li:nth-of-type(3) {
+    animation-delay: .2s;
+}
+
+#txt2 ul li:nth-of-type(4),
+#txt3 ul li:nth-of-type(4) {
+    animation-delay: .3s;
+}
+
+#txt2 ul li:nth-of-type(5),
+#txt3 ul li:nth-of-type(5) {
+    animation-delay: .4s;
+}
+
+/* Content Three */
+.content_three {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(145deg, rgb(77, 108, 199), white, rgb(95, 135, 160));
+    border-radius: 15px;
+}
+
+.content_three h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-top: 55px;
+}
+
+.content_three p {
+    font-size: 1rem;
+    color: navy;
+    font-weight: 300;
+    text-shadow: 0px 1px 0px #ffffff;
+    margin-top: 5px;
+
+}
+
+.content_img3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('./10689_0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+}
+
+#txt3 ul {
+    background-color: rgba(0, 0, 128, 0.45);
+    border-radius: 50%;
+    transform: translate(460px, 20px);
+}
+
+/* Order */
+.customize {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-top: 40px;
+    border: 2px dashed black;
+    border-left: none;
+    border-right: none;
+}
+
+.customize #cusimg {
+    width: 360px;
+    height: 453px;
+    background-color: rgba(196, 193, 125, 0.539);
+    margin-left: 20px;
+    border-radius: 6px;
+}
+
+.customize #cusimg img {
+    width: 300px;
+    padding-top: 10px;
+    ;
+    padding-left: 70px;
+    border-radius: 15px;
+}
+
+.customize #cusimg p {
+    width: 285px;
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 1rem;
+    padding: 7px;
+    border: 1px solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.customize #custext {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(rgb(251, 192, 202), white);
+    margin-top: 45px;
+    border-radius: 20px 5px 20px;
+}
+
+.customize #custext h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(234, 109, 138);
+    margin-bottom: 17px;
+    margin-top: 15px;
+}
+
+#custext form {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#custext form div {
+    width: 70%;
+    height: 45px;
+    background-color: rgb(201, 126, 151);
+    border-radius: 9px;
+    box-shadow: 0px 5px 5px #ffffff;
+    padding: 0px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#custext form #cusname {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+#custext form #cusname::placeholder {
+    color: #ffffff;
+    padding-left: 10px;
+    font-size: 12pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fa-paper-plane {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    padding-right: 20px;
+}
+
+.fa-paper-plane:hover {
+    color: rgb(216, 102, 140);
+    text-shadow: 0px 3px 3px #ffffff;
+}
+
+#custext form div input {
+    width: 150px;
+    height: 23px;
+}
+
+
+/* Start Address */
+.address {
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(196, 193, 125, 0.523);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.address #address {
+    width: 430px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    padding: 10px 0px;
+}
+
+.address #address div {
+    width: 150px;
+    height: 140px;
+    background-color: #ffffff;
+
+    margin: auto;
+    padding: 0px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 10px;
+}
+
+.address #address i {
+    margin-bottom: 13px;
+    font-size: 2.3rem;
+    margin-top: 10px;
+}
+
+.address #address h3 {
+    font-size: 1.4rem;
+}
+
+.address #address p {
+    padding: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.address #address p:hover {
+    font-style: italic;
+    color: rgb(196, 193, 125);
+}
+
+.address #address #map {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: transparent;
+}
+
+.address .load {
+    width: 300px;
+    /* background-color: rgb(222, 134, 154); */
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.address .load h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.address .load p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+
+.address .load label {
+    font-size: 1.2rem;
+}
+
+.address .load input {
+    width: 280px;
+    height: 29px;
+    padding-left: 15px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: outset;
+}
+
+.address .load textarea {
+    width: 280px;
+    margin-top: 6px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: outset;
+}
+
+.address .load textarea::placeholder {
+    font-size: 0.84rem;
+    font-family: sans-serif;
+}
+
+.address .load button {
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 1px;
+    background-color: #ffffff;
+
+    font-size: 1.2rem;
+    font-family: serif;
+    border: none;
+    box-shadow: 0px 3px 5px;
+}
+
+.address .load button:hover {
+    border: 1px solid white;
+    box-shadow: 0px 3px 3px rgb(238, 200, 213);
+
+    height: 41px;
+    color: rgb(201, 126, 151);
+}
+
+/* End Address */
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 28px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+
+    color: rgb(189, 99, 129);
+    font-style: italic;
+    cursor: default;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .content_txt {
+        width: 100%;
+        left: 0;
+        padding: 20px;
+    }
+
+    .content_two {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .content_three .content_txt {
+        margin-top: 45px;
+    }
+
+    .content_img3 {
+        background-position: right;
+        background-size: fit;
+        background-repeat: no-repeat;
+    }
+
+    #txt3 h1 {
+        color: transparent
+    }
+
+    #txt3 h1::before {
+        content: "The Villainess' Perfect Match";
+        transform: translate(-40px, -50px);
+        font-size: 1.8rem;
+        color: #22036e;
+        text-shadow: 1px 1px 2px #b7da88;
+        position: absolute;
+    }
+
+    .customize {
+        width: 100%;
+        height:50vh;
+        padding: 0px;
+        flex-direction: column;
+        align-items: top;
+        background-color: rgba(255, 192, 203, 0.534);
+        background-image: url('https://i.pinimg.com/736x/f4/1c/88/f41c88365ead59e1a2d552e3a2cb1834.jpg');
+        background-position: right;
+        background-attachment: fixed;
+        justify-content: start;
+    }
+
+    .customize #cusimg {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        padding: 10px 0px 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        background-color: transparent;
+    }
+
+    .customize #cusimg img {
+        width: 200px;
+        height: 210px;
+        border-radius: 90%;
+        padding-left: 0;
+    }
+
+    .customize #cusimg p {
+        width: 250px;
+        height: 100px;
+        font-size: 13px;
+        background-color: rgba(255, 192, 203, 0.534);
+        border-radius: 20px;
+        border: none;
+        margin: 50px 10px 0px 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .customize #custext {
+        width: 290px;
+        height: fit-content;
+        border: 2px dotted white;
+        margin: 0;
+        transform: translate(-90px, -10px) scale(.9);
+    }
+
+    .customize #custext h2 {
+        margin: 8px 0px 8px 0px;
+        font-size: 1.5rem;
+    }
+
+    .customize #custext form {
+        height: 170px;
+        justify-content: space-around;
+    }
+
+    .customize #custext form div {
+        height: 35px;
+    }
+
+    #custext form #cusname::placeholder {
+        font-size: 15px;
+    }
+
+    #txt2 ul,
+    #txt3 ul {
+        transform: none;
+        margin: 20px auto;
+    }
+
+    .address {
+        background-image: url('https://media.tenor.com/fiaclMSIKa4AAAAj/kusuriya-no-hitorigoto-apothecary-diaries.gif');
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 0px;
+        background-attachment: scroll;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .address #address {
+        grid-template-columns: .5fr .5fr;
+        height: auto;
+        width: 80%;
+        padding: 10px;
+        margin-top: 150px;
+        gap: 10px;
+    }
+
+    .address #address div {
+        width: 120px;
+        height: 115px;
+    }
+
+    #one {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIfmOvJXYOVXBA08jdJm6hIsVQEKY-VF0Ung&s');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90px;
+    }
+
+    #two {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hgLlusxVSLVtDME3KQDEv9ceWcd5mTlqm1il4iznQvY7FlwTRHPp7QJ3tOz-ULUmDeI&usqp=CAU');
+        background-repeat: no-repeat;
+        background-size: 150px;
+    }
+
+    #three {
+        background-image: url('./mao.jpg');
+        background-repeat: no-repeat;
+        background-size: 160px;
+        background-position: center;
+    }
+
+    #four {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc-YMNJW7DELF_ZtcEKBpar-FebjsCKRgRtg&s');
+        background-repeat: no-repeat;
+        background-size: 115px;
+        background-position: center;
+    }
+
+    .address #address i {
+        font-size: 1.5rem;
+        color: #22036e;
+        text-shadow: 1px 1px 3px white;
+    }
+
+    .address #address h3 {
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .address #address p {
+        font-size: .64rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .address #address iframe {
+        margin-top: 25px;
+        width: 290px;
+    }
+
+    .address .load {
+        width: 90%;
+        margin: 50px 0px 10px 0px;
+        padding: 15px;
+        background-color: #8267c56a;
+    }
+
+    .address .load form {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        padding: 10px 0;
+    }
+}

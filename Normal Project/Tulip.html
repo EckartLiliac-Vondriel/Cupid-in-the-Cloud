@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<ta>, initial-scale=1.0">
+  <title>Tulip</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/18165/18165451.png">
+</head>
+<style>
+  body {
+    background-image: url('tuu1.jpg');
+    background-size: cover;
+  }
+
+  table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 50px;
+  }
+
+  td {
+    border: 2px double rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.201);
+  }
+
+  table img {
+    height: 120px;
+    border-radius: 20px;
+  }
+
+  figcaption {
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 0px 0px 2px rgb(128, 0, 70);
+  }
+
+  button {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border:3px dashed rgb(247, 159, 213);
+    background-color: transparent;
+
+    animation: bg 1.5s ease-in infinite alternate;
+  }
+  @keyframes bg {
+    0%{
+      background-color: white;
+    }
+    90%{
+      background-color: rgba(211, 160, 221, 0.523);
+    }
+  }
+
+  button:hover {
+    box-shadow: 0px 2px 3px rgb(144, 95, 197);
+    font-size: 1rem;
+    font-style: italic;
+    background-color: transparent;
+  }
+
+  button .Par {
+    text-decoration: none;
+    color:white;
+    text-shadow: 0px 1px 1px black;
+  }
+
+  #btn a{
+    text-decoration: none;
+    color:palevioletred
+  }
+
+  .calm-img {
+    width: 100px;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+      margin: 10px auto;
+    }
+
+    table tr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    table td {
+      width: 30%;
+      /* Almost 3 images per row */
+      margin: 1%;
+      /* Add space between columns */
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    table img {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+    }
+
+    figcaption {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    button {
+      display: block;
+      margin: 5px auto;
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+  }
+</style>
+
+<body>
+  <table width="900px" height="650px" align="center">
+    <tr>
+      <td><img src=t.jpg class="calm-img">
+        <figcaption>Tulip Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+
+      </td>
+
+      <td><img src=t1.jpg class="calm-img">
+        <figcaption>Tulip Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+      <td><img src=tt2.jpg class="calm-img">
+        <figcaption>Tulip Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+
+
+    </tr>
+    <tr>
+      <td><img src=t3.jpg class="calm-img">
+        <figcaption>Tulip Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+
+      <td><img src=t4.jpg class="calm-img">
+        <figcaption>Tulip Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+      <td><img src=t5.jpg class="calm-img">
+        <figcaption>Tulip Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+
+    </tr>
+  </table>
+  <button type="button" id="btn"><a href="Flower.html">Back</a></button>
+</body>
+
+</html>

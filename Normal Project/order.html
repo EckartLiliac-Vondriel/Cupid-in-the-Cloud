@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/5073/5073198.png">
+</head>
+<style>
+  body {
+    background-image: url(pay.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  form {
+    width: 400px;
+    background-color: rgba(245, 245, 245, 0.575);
+    border-radius: 30px;
+    padding: 25px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  input,
+  radio,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  .animated-text {
+    font-size: 1rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animated-image {
+
+    animation: zoomIn 1.5s ease-in-out;
+  }
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  .animated-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 6px;
+
+    border: none;
+    cursor: pointer;
+    animation: slideIn 1s ease-in-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .button .animated-button{
+    width:100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .animated-button:hover {
+    background-color: #456fa0;
+    transform: scale(1.04);
+    transition: transform 0.3s;
+  }
+
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+      margin: 10px auto;
+      padding: 10px;
+    }
+
+    label {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      font-size: 14px;
+      padding: 6px;
+    }
+
+    .animated-image {
+      width: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .animated-button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    h1.animated-text {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  .class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+</style>
+
+<body>
+  <div class="form-group">
+    <h1 align="center" class="animated-text" style="font-size: 1.8rem;">Paymant Form</h1>
+    <form action="#">
+      <div class="input">
+        <label for="city">Bouquet flower name:</label>
+        <select id="city" name="city" required>
+          <option value="">Choose a Bouquet Flower</option>
+          <option value="rose">Rose</option>
+          <option value="tulip">Tulip</option>
+          <option value="orchid">Orchid</option>
+          <option value="daisy">Daisy</option>
+        </select>
+        <br><br>
+      </div>
+
+
+
+      <div>
+
+        <label for="price" class="animated-text">Price</label>
+        <input type="number" id="price" name="price" placeholder="Enter your bouquet price" required><br><br>
+
+        <label>
+          <input type="radio" name="gender" value="male" required>
+          <img src="kpay.jpg" alt="Apple" width="50" class="animated-image">
+          Kpay
+        </label><br><br>
+
+        <label>
+          <input type="radio" name="gender" value="female" required>
+          <img src="wave.jpg" alt="Apple" width="50" class="animated-image"> Wave
+        </label><br>
+        <nr></nr>
+
+        <label>
+          <input type="radio" name="gender" value="other" required>
+          <img src="aya1.jpg" alt="Apple" width="50" class="animated-image"> AYA
+        </label><br><br>
+      </div>
+
+      <div class="button">
+        <button type="submit" class="animated-button">Submit</button>
+      <button type="reset" class="animated-button">Cancel</button>
+      </div>
+      
+  </div>
+  </form>
+</body>
+
+</html>

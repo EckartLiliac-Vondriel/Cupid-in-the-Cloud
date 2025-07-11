@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<ta>, initial-scale=1.0">
+  <title>Orchid</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/6670/6670705.png">
+</head>
+<style>
+  body {
+    background-image: url('orchid.jpg');
+    background-size: cover;
+  }
+
+  table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 50px;
+    ;
+  }
+
+  td {
+    border: 2px double rgb(255, 255, 255);
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  table img {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+  }
+
+  figcaption {
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 0px 0px 2px navy;
+  }
+
+  button {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border:2px dotted rgb(82, 115, 223);
+    background-color: rgba(146, 192, 234, 0.406);
+    transition: all 1s linear;
+  }
+
+  button:hover {
+    box-shadow: 0px 2px 3px rgb(95, 136, 197);
+    font-size: 1rem;
+    font-style: italic;
+    background-color: transparent;
+    border: 0px dotted green;
+  }
+
+  button .Par {
+    text-decoration: none;
+    color: navy;
+  }
+
+  #btn a{
+    text-decoration: none;
+  }
+
+  .calm-img {
+    animation: bounce 2s infinite;
+  }
+
+
+  @keyframes bounce {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-20px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    table tr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    table td {
+      width: 30%;
+      /* Almost 3 images per row */
+      margin: 1%;
+      /* Add space between columns */
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    table img {
+      width: 70%;
+      height: auto;
+      margin-left: 0;
+    }
+
+    figcaption {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    button {
+      display: block;
+      margin: 5px auto;
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+  }
+</style>
+
+<body>
+  <table width="800px" height="500px">
+    <tr>
+      <td>
+        <img src=O1.jpg class="calm-img">
+        <figcaption>Orchid Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+
+      </td>
+
+      <td>
+        <img src=O2.jpg class="calm-img">
+        <figcaption>Orchid Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+      <td><img src=O3.jpg class="calm-img">
+        <figcaption>Orchid Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+
+
+    </tr>
+    <tr>
+      <td><img src=O4.jpg class="calm-img">
+        <figcaption>Orchid Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+
+      <td><img src=O5.jpg class="calm-img">
+        <figcaption>Orchid Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+      <td><img src=O6.jpg class="calm-img">
+        <figcaption>Orchid Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+
+    </tr>
+  </table>
+  <button type="button" id="btn"><a href="flower.html">Back</a></button>
+</body>
+
+</html>

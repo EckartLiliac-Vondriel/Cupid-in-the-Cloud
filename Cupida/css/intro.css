@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./celestial.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+div ul {
+    list-style-type: none;
+    display: flex;
+}
+
+div ul li {
+    font-size: 5rem;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.927);
+
+    animation: ledani 2s linear infinite;
+}
+
+@keyframes ledani {
+    0% {
+        color: rgba(0, 0, 0, 0.68);
+    }
+
+    90% {
+        color: rgba(0, 0, 0, 0.68);
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+div ul li:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+div ul li:nth-of-type(2) {
+    animation-delay: .1s;
+}
+
+div ul li:nth-of-type(3) {
+    animation-delay: .2s;
+}
+
+div ul li:nth-of-type(4) {
+    animation-delay: .3s;
+}
+
+div ul li:nth-of-type(5) {
+    animation-delay: .4s;
+}
+
+.hello,.there{
+    animation:dance 10s linear infinite alternate;
+}
+@keyframes dance {
+    0%{
+        transform: translate(0px,-20px);
+    }
+    50%{
+        transform: translate(0px,15px);
+    }
+    100%{
+        transform:translate(0px,0px)
+    }
+}
+.click {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.click h1 {
+    color: bisque;
+    margin: 20px;
+    text-shadow: 0px 1px 5px #ff0000;
+}
+
+.click a {
+    font-size: 1.6rem;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(255, 244, 159);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+    margin-bottom: 15px;
+    background: linear-gradient(bisque, white, rgb(240, 255, 205));
+    cursor: pointer;
+
+    transition: all .3s linear;
+}
+
+.click a:hover {
+    font-size: 1.8rem;
+    color:white;
+    text-shadow: 0px 2px 5px rgb(234, 174, 100);
+    padding: 10px;
+}
+
+.click h2 {
+    color: rgb(246, 236, 123);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#audio {
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    opacity: 0;
+}
+
+.point h1 {
+    color: rgb(255, 181, 70);
+}
+
+.point {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+
+    animation: point 3s ease infinite;
+}
+
+@keyframes point {
+    0% {
+        transform: translate(-128px, -17px) scale(0);
+    }
+
+    100% {
+        transform: translate(-128px, -17px) scale(.3);
+    }
+}
+
+/* standard size in mobile and tablet */
+@media(max-width: 768px){
+
+    body {
+    height: 100vh;
+    background-image: url("./celestial.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+    .click i,.click a {
+        color: rgb(168, 62, 62)
+    }
+}
+
+@media(max-width: 430px){
+
+    body {
+    height: 100vh;
+    background-image: url("./celestial.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+div ul li {
+    font-size: 3rem;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.927);
+
+    animation: ledani 2s linear infinite;
+}
+
+.click h1 {
+    margin-top:13px;
+    font-size: 1.7rem;
+}
+    .click i,.click a {
+        margin: 0px;
+        color: rgb(168, 62, 62)
+    }
+
+    @keyframes point {
+    0% {
+        transform: translate(-128px, -17px) scale(0);
+    }
+
+    100% {
+        transform: translate(-128px, -17px) scale(.2);
+    }
+}
+
+}

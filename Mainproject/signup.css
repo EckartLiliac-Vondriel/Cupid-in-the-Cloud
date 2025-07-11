@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+.major .content {
+  background-color: #ff7575;
+  width: auto;
+  height: 28.45rem;
+  border-radius: 2rem 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  box-shadow: -2px 0 7px 1px rgba(0, 0, 0, 0.2);
+}
+.major .content h2 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.major .content p {
+  font-size: 1.2rem;
+  color: white;
+}
+.major .content a {
+  text-decoration: none;
+  width: auto;
+  padding: 1rem 1.7rem;
+  border: 1px solid white;
+  color: white;
+  border-radius: 2rem;
+  transition: all 100ms;
+}
+.major .content a:hover {
+  transform: scale(0.9);
+}
+
+.major {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minor {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: 2px 0 8px 1px rgba(0, 0, 0, 0.2);
+}
+.minor h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: lighter;
+  color: rgb(21, 21, 21);
+}
+.form {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: auto;
+  height: auto;
+  margin-bottom: 1rem;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.container label {
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  color: rgb(38, 38, 38);
+}
+.container input {
+  border-radius: 2rem;
+  border: none;
+  width: 18rem;
+  height: 2rem;
+  color: rgb(8, 8, 8);
+  background-color: rgb(254, 236, 236);
+  padding: 0.2rem 1rem;
+}
+.container input:focus {
+  background-color: #ffffff;
+}
+.container3 input {
+  background-color: #fd5858;
+  font-size: 1.1rem;
+  color: white;
+  padding: 0 1rem;
+}
+
+.form .connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.form .connect p:nth-child(1) {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.form .connect p:nth-child(2) {
+  font-size: 1.1rem;
+  margin: 0.7rem 0;
+  text-align: center;
+}
+.form .connect .icon {
+  width: 50%;
+  height: auto;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.form .connect .icon i:nth-child(1) {
+  color: rgb(16, 0, 188);
+  cursor: pointer;
+}
+.form .connect .icon i:nth-child(2) {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.form .connect .icon svg {
+  height: auto;
+  cursor: pointer;
+}

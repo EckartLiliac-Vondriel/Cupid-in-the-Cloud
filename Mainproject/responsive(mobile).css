@@ -1,0 +1,338 @@
+@media only screen and (max-width: 450px) {
+  header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 20px 20px;
+  }
+  header nav {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .logo {
+    padding-left: 2rem;
+  }
+  header nav .logo a {
+    font-size: 2.8rem;
+    white-space: nowrap;
+  }
+  .logo i {
+    font-size: 4rem;
+  }
+
+  .navbar {
+    height: auto;
+    grid-column: 1 / span 2;
+    grid-row: 2/3;
+    box-shadow: 0px 3px 7px 3px rgba(190, 166, 166, 0.5);
+    justify-content: space-around;
+    border-radius: 0 0 20px 20px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    font-size: 2.7rem;
+    white-space: nowrap;
+    padding: 0.7rem 0.8rem;
+    border-radius: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  .navbar .login {
+    padding-right: 2rem;
+  }
+
+  .login a:nth-child(2) {
+    display: block;
+    background-color: #f43f5e;
+    padding: 1rem;
+    font-size: 3.4rem;
+    white-space: nowrap;
+    border-radius: 2rem;
+    transition: all 100ms;
+  }
+  .login a:nth-child(2) {
+    color: black;
+    transform: translate(1px, -1px);
+    box-shadow: -1px 1px 5px 0.5px rgba(58, 58, 58, 0.5);
+  }
+  .login a:nth-child(1),
+  .login a:nth-child(3) {
+    display: none;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  article {
+    margin-top: 25rem;
+  }
+  .section1 {
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 h1 {
+    text-align: center;
+    font-size: 8rem;
+    margin-bottom: 3rem;
+  }
+  .section1 p {
+    width: 55rem;
+    height: auto;
+    line-height: 4rem;
+    margin: 2rem 0;
+    font-size: 3.4rem;
+    color: rgb(38, 38, 38);
+  }
+  .section1 .container1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    gap: 3.5rem;
+  }
+  .section1 .container1 a:nth-child(1) {
+    font-size: 3.7rem;
+    font-weight: bold;
+    padding: 3rem 0;
+    width: 50rem;
+    white-space: nowrap;
+  }
+  .section1 .container1 a:nth-child(2) {
+    font-size: 3.7rem;
+    font-weight: bold;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    width: 48rem;
+    white-space: nowrap;
+  }
+  .section1 .container2 {
+    width: 100%;
+    background-color: #fee1e6;
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+    border-radius: 2rem;
+    animation-range: 0% 30%;
+  }
+  .section1 .container2 h2 {
+    font-size: 5rem;
+    margin-top: 10rem;
+    padding: 0 8rem;
+    text-align: center;
+  }
+
+  .section1 .container2 .advs {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .section1 .container2 .advs div {
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    width: 50rem;
+    animation: mview1 linear both;
+    animation-timeline: view();
+    animation-range: 20% 50%;
+  }
+  @keyframes mview1 {
+    0% {
+      opacity: 0;
+      transform: translateX(-400px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  .section1 .container2 .advs div i {
+    width: fit-content;
+    font-size: 9rem;
+  }
+  .section1 .container2 .advs div h3 {
+    margin: 2rem 0;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .section1 .container2 .advs div p {
+    line-height: 3.5rem;
+    width: auto;
+    font-size: 3.5rem;
+  }
+  .section2 .container {
+    margin-bottom: 5rem;
+  }
+  .section2 .container .p1 {
+    font-size: 3.5rem;
+  }
+  .section2 .container h2 {
+    font-size: 5rem;
+    margin: 4rem 0;
+    text-align: center;
+  }
+  .section2 .container .p2 {
+    font-size: 3.5rem;
+    width: 60rem;
+  }
+  .section2 .advs {
+    flex-direction: column;
+    gap: 12rem;
+  }
+  .section2 .advs div i {
+    width: auto;
+    font-size: 8rem;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .section2 .advs div h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 2rem 0;
+  }
+  .section2 .advs div p {
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+  }
+  .section3 {
+    width: 90%;
+    padding: 5rem 2rem;
+    border-radius: 3rem;
+  }
+  .section3 h2 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  .section3 .container {
+    width: 100%;
+    flex-direction: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .section3 .container div {
+    width: auto;
+    height: auto;
+  }
+  .section3 .container div h3 {
+    font-size: 4rem;
+  }
+  .section3 .container .item3 h3,
+  .section3 .container .item4 h3,
+  .section3 .container .item3 h4,
+  .section3 .container .item4 h4,
+  .section3 .container .item3 p,
+  .section3 .container .item4 p {
+    animation-range: 15% 25%;
+  }
+
+  .section3 .container div h4 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .section3 .container div p {
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  .section3 a {
+    font-size: 2.5rem;
+    padding: 1.3rem 5rem;
+  }
+  .section4 {
+    width: 100%;
+    background: white;
+  }
+  .section4 .container h2 {
+    text-align: center;
+    font-size: 3.1rem;
+  }
+  .section4 .container p {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .section4 a {
+    font-size: 2.7rem;
+    padding: 1.4rem 5rem;
+  }
+  footer {
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .container {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+  footer .container .social .div1 i {
+    font-size: 3.3rem;
+  }
+  footer .container .social .div1 h2 {
+    font-size: 3.3rem;
+  }
+  footer .container .social p {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  footer .container .social .i-container {
+    width: auto;
+    color: #ff274b;
+  }
+  footer .container .social .i-container i {
+    font-size: 3rem;
+    padding: 13px 10px;
+    background-color: #fcd9d9;
+    width: auto;
+    height: auto;
+    margin: 2rem 0;
+  }
+  footer .container .support h2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+  footer .container .support p {
+    font-size: 2rem;
+  }
+  footer .container .contact {
+    width: 24rem;
+  }
+  footer .container .contact .main {
+    font-size: 6rem;
+    text-align: center;
+  }
+  footer .container .contact h3 {
+    width: auto;
+    font-size: 2.5rem;
+  }
+
+  footer .container .contact p {
+    font-size: 1.9rem;
+  }
+  footer .container .contact div {
+    width: 100%;
+  }
+  footer .container .contact div a {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  footer .container .contact div i {
+    font-size: 2rem;
+  }
+}

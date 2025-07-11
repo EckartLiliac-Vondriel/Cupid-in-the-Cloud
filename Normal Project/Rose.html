@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<ta>, initial-scale=1.0">
+  <title>Rose</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4233/4233744.png">
+</head>
+<style>
+  body {
+    background-image: url('rose6.jpg');
+    background-size: cover;
+  }
+
+  table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 50px;
+  }
+
+  td {
+    border: 2px double rgb(255, 255, 255);
+    border-radius: 30px;
+    background-color: rgba(179, 235, 148, 0.34);
+    box-shadow: 1px 3px 5px white;
+  }
+
+  table img {
+    width: 200px;
+    height: 130px;
+    border-radius: 20px;
+  }
+
+  figcaption {
+    color:black;
+    font-weight: bold;
+    margin-top:5px;
+    text-shadow: 0px 1px 3px rgb(255, 255, 255);
+    animation: shadow 1s ease-in infinite;
+  }
+  @keyframes shadow{
+    0%{
+        color:black;
+        text-shadow: 0px 3px 10px rgba(241, 67, 96, 0.703);
+    }
+    70%{
+      color:rgba(150, 18, 18, 0.886);
+        text-shadow: -6px 3px 15px rgb(255, 255, 255);
+    }
+    90%{
+      color:rgba(255, 25, 25, 0.5);
+        text-shadow: 6px 3px 15px rgb(255, 255, 255);
+    }
+
+}
+
+  button {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border:none;
+    background-color: rgb(153, 51, 59);
+
+     transition: all 1s linear;
+  }
+  button:hover{
+    background-color: white;
+  }
+
+  button .Par {
+    text-decoration: none;
+    color:white;
+  }
+  button .Par:hover{
+    color:rgb(153, 51, 59);
+    font-style: oblique;
+    padding:2px;
+  }
+
+  #btn a{
+    text-decoration: none;
+    color:rgb(254, 236, 174);
+    transition: all 1s linear;
+  }
+  #btn a:hover{
+    color:rgb(153, 51, 59);
+  }
+  .float-img {
+    width: 120px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlide 1.5s ease-out infinite alternate;
+    animation-delay: 0.8s;
+  }
+
+  @keyframes fadeSlide {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+      margin: 10px auto;
+    }
+
+    table tr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    table td {
+      width: 30%;
+      /* Almost 3 images per row */
+      margin: 1%;
+      /* Add space between columns */
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    table img {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+    }
+
+    figcaption {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    button {
+      display: block;
+      margin: 5px auto;
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+  }
+</style>
+
+<body>
+  <table width="800px" height="600px" align="center">
+    <tr></tr>
+    <td><img src=R1.jpg class="float-img">
+      <figcaption>Rose Bouquet<br>Price-10000ks</figcaption>
+
+      <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+
+
+
+    </td>
+
+    <td><img src=R2.jpg class="float-img">
+      <figcaption>Rose Bouquet<br>Price-10000ks</figcaption>
+      <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+    </td>
+    <td><img src=R3.jpg class="float-img">
+      <figcaption>Rose Bouquet<br>Price-10000ks</figcaption>
+      <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+    </td>
+
+
+    </tr>
+    <tr>
+      <td><img src=R4.jpg class="float-img">
+        <figcaption>Rose Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+
+      <td><img src=R8.jpg class="float-img">
+        <figcaption>Rose Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+      <td><img src=R6.jpg class="float-img">
+        <figcaption>Rose Bouquet<br>Price-10000ks</figcaption>
+        <button type="button"><a href="order.html" class="Par" target="_blank">Purchase</a></button>
+      </td>
+
+    </tr>
+  </table>
+  <button type="button" id="btn"><a href="flower.html">Back</a></button>
+</body>
+
+</html>
