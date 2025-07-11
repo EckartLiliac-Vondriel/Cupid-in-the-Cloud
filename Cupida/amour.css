@@ -285,6 +285,7 @@ footer small {
     }
 
     nav ul li a {
+        font-size: .7rem;
         text-decoration: none;
         color: black;
         transition: all .7s ease;
@@ -338,7 +339,7 @@ footer small {
     }
 
     .therapy {
-        height:60vh;
+        height:80vh;
         margin-top: 230px;
     }
 

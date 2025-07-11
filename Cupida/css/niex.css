@@ -912,10 +912,9 @@ footer {
     }
 
     .manga {
-        height: 40vh;
+        height: 80vh;
         padding: 10px;
         background-size: 170%;
-        background-attachment: scroll;
     }
 
     .manga::before {
@@ -961,7 +960,7 @@ footer {
     }
 
     .contact {
-        height: 60vh;
+        height: 80vh;
         background: linear-gradient(#680811, rgb(154, 40, 40), rgb(232, 61, 61));
         margin-top: 10px;
         padding: 20px;
